@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.zenithvision.bf/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.zenithvision.bf/assets/images/logo/zenith-vision-logo-white-bg.png</image:loc>
+      <image:title>Logo Zenith Vision Agence de Communication Visuelle Ouagadougou</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zenithvision.bf/assets/images/portfolio/kakemono/kakemono_1.jpg</image:loc>
+      <image:title>Kakémono Grande Base 85x200cm Dos Gris Ouagadougou</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zenithvision.bf/assets/images/portfolio/xbanner/xbanner_1.jpeg</image:loc>
+      <image:title>X-Banner 80x180cm Ouagadougou</image:title>
+    </image:image>
+  </url>
+</urlset>

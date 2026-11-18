@@ -1,0 +1,144 @@
+/* ==========================================================================
+   ZENITH VISION - Styles personnalisés & Animations fluides
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+:root {
+  --color-brand-blue: #033B6E;
+  --color-brand-blue-dark: #02274A;
+  --color-brand-blue-night: #031B33;
+  --color-brand-yellow: #F0E60A;
+  --color-brand-yellow-hover: #DFC205;
+  --color-brand-yellow-light: #FEF9C3;
+  --color-bg-soft: #F8FAFC;
+  --color-text-main: #0F172A;
+  --color-text-muted: #64748B;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #031B33;
+}
+::-webkit-scrollbar-thumb {
+  background: #033B6E;
+  border-radius: 5px;
+  border: 2px solid #031B33;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F0E60A;
+}
+
+/* Marquee Infini */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Shimmer & Glow Effects */
+.glow-yellow {
+  box-shadow: 0 10px 30px -8px rgba(240, 230, 10, 0.4);
+}
+
+.glow-blue {
+  box-shadow: 0 15px 35px -10px rgba(3, 59, 110, 0.35);
+}
+
+.glow-subtle {
+  box-shadow: 0 12px 30px -10px rgba(15, 23, 42, 0.08);
+}
+
+/* Gradient Text */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #F0E60A 0%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #033B6E 0%, #0284C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Simulator Canvas & Frames */
+.support-preview-card {
+  perspective: 1000px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.support-preview-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Lightbox Animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-lightbox {
+  animation: fadeInScale 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Pulse Badge */
+@keyframes pulseDot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.3);
+  }
+}
+
+.pulse-dot {
+  animation: pulseDot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Glassmorphism Classes */
+.glass-header {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-dark {
+  background: rgba(3, 27, 51, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(240, 230, 10, 0.15);
+}
+
+/* Sticky process timeline */
+.process-step-active {
+  border-left-color: #F0E60A !important;
+  background-color: rgba(240, 230, 10, 0.05);
+}
