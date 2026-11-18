@@ -227,9 +227,9 @@
         <span class="text-slate-300">Délai garanti pour tous vos supports imprimés et créations graphiques !</span>
       </div>
       <div class="flex items-center gap-6 text-slate-300">
-        <span class="flex items-center gap-1.5 hover:text-white transition-colors">
+        <a href="#localisation" class="flex items-center gap-1.5 hover:text-white transition-colors cursor-pointer">
           <i class="fa-solid fa-location-dot text-[#F0E60A] mr-1.5"></i> Ouagadougou, Cissin (Code 10010)
-        </span>
+        </a>
         <a href="tel:+22665414899" class="flex items-center gap-1 font-semibold text-[#F0E60A] hover:underline">
           <i class="fa-solid fa-phone text-[#F0E60A] mr-1.5"></i> +226 65 41 48 99
         </a>
@@ -259,7 +259,7 @@
       </a>
 
       <!-- Navigation Desktop -->
-      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-semibold text-slate-700">
         <a href="#accueil" class="hover:text-[#033B6E] transition-colors">Accueil</a>
         <a href="#simulateur" class="hover:text-[#033B6E] transition-colors flex items-center gap-1">
           <span>Simulateur Supports</span>
@@ -269,6 +269,10 @@
         <a href="#processus" class="hover:text-[#033B6E] transition-colors">Méthode 48H</a>
         <a href="#realisations" class="hover:text-[#033B6E] transition-colors">Réalisations</a>
         <a href="#a-propos" class="hover:text-[#033B6E] transition-colors">À Propos</a>
+        <a href="#localisation" class="hover:text-[#033B6E] transition-all flex items-center gap-1.5 text-[#033B6E] font-bold bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded-xl border border-blue-200 shadow-xs">
+          <i class="fa-solid fa-location-dot text-rose-500"></i>
+          <span>Localisation</span>
+        </a>
       </nav>
 
       <!-- CTA Desktop Header -->
@@ -301,7 +305,10 @@
       <a href="#processus" class="mobile-menu-link block text-base font-semibold text-slate-800">Méthode 48H Chrono</a>
       <a href="#realisations" class="mobile-menu-link block text-base font-semibold text-slate-800">Nos Réalisations</a>
       <a href="#a-propos" class="mobile-menu-link block text-base font-semibold text-slate-800">À Propos de Zenith Vision</a>
-      <a href="#contact" class="mobile-menu-link block text-base font-semibold text-[#033B6E]">Contact & Devis</a>
+      <a href="#localisation" class="mobile-menu-link block text-base font-bold text-[#033B6E] flex items-center gap-2">
+        <i class="fa-solid fa-location-dot text-rose-500"></i> Localisation & Carte Maps
+      </a>
+      <a href="#contact" class="mobile-menu-link block text-base font-semibold text-slate-800">Contact & Devis</a>
       <div class="pt-4 border-t border-slate-100">
         <a 
           href="https://wa.me/22665414899?text=Bonjour%20Zenith%20Vision%2C%20je%20souhaite%20commander%20un%20support." 
@@ -1455,7 +1462,7 @@
       <!-- =====================================================================
            BLOC CARTE GOOGLE MAPS ZENITH VISION (Localisation officielle)
            ===================================================================== -->
-      <div class="mt-14 bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xl">
+      <div id="localisation" class="mt-14 scroll-mt-28 bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xl">
         <div class="p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 bg-gradient-to-r from-slate-50 to-white">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[#033B6E] text-xs font-bold uppercase tracking-wider mb-2">
@@ -1561,7 +1568,7 @@
             <p><i class="fa-solid fa-phone text-[#F0E60A] w-5 text-center mr-1"></i> <strong>Tél :</strong> +226 65 41 48 99</p>
             <p><i class="fa-brands fa-whatsapp text-emerald-400 w-5 text-center mr-1 text-sm"></i> <strong>WhatsApp :</strong> +226 65 41 48 99</p>
             <p><i class="fa-solid fa-envelope text-amber-400 w-5 text-center mr-1"></i> <strong>Email :</strong> abdousalamkoanda@gmail.com</p>
-            <p><i class="fa-solid fa-location-dot text-rose-400 w-5 text-center mr-1"></i> <strong>Lieu :</strong> Ouagadougou / Cissin</p>
+            <p><a href="#localisation" class="hover:text-[#F0E60A] transition-colors"><i class="fa-solid fa-location-dot text-rose-400 w-5 text-center mr-1"></i> <strong>Lieu :</strong> Ouagadougou / Cissin (Voir la carte Maps)</a></p>
             <a 
               href="https://wa.me/22665414899" 
               target="_blank" rel="noopener noreferrer"
